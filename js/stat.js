@@ -39,7 +39,7 @@ window.renderStatistics = function (ctx, names, times) {
   var maxTime = getMaxElement(times);
 
   for (var i = 0; i < names.length; i++) {
-  ctx.fillText(names[i], CLOUD_X + GAP + 30 * i, CLOUD_Y + GAP + 30 + FONT_GAP + (GAP + BAR_HEIGHT));
-  ctx.fillRect(CLOUD_X + GAP + 20 + TEXT_WIDTH * i, CLOUD_Y + GAP + 50, (barWidth * times[i]) / maxTime, BAR_HEIGHT);
+    ctx.fillText(names[i], CLOUD_X + GAP + 30 * i, CLOUD_Y + GAP + 30 + FONT_GAP + (GAP + BAR_HEIGHT));
+    ctx.fillRect(CLOUD_X + GAP + 20 + TEXT_WIDTH * i, CLOUD_Y + GAP + 50, (barWidth * times[i]) / maxTime, BAR_HEIGHT);
   }
 };
